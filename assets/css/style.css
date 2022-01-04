@@ -1,3 +1,46 @@
+/* global body style */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #252A34;
+    text-align: center;
+}
+
+/* logo and heading text */
+
+.quiz-name {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1 {
     font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 3.5rem;
+    color: #676FA3;
+    text-shadow: 2px 2px #252A34;
+    margin-bottom: -0.5rem;
+}
+
+.logo {
+    height: 10rem;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5rem;
+}
+
+/* quiz-area */
+
+.quiz-area {
+    background-color: #ffffff;
+    border: 4px solid #252A34;
+    border-radius: 1rem;
+    width: 60%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 8% 2% 2% 2%;
 }
