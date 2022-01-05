@@ -24,7 +24,7 @@ h1 {
 }
 
 .logo {
-    height: 11rem;
+    max-width: 11rem;
     float: left;
     margin-left: auto;
     margin-right: auto;
@@ -49,6 +49,7 @@ h1 {
 .question {
     font-size: 1.3rem;
     font-weight: 600;
+    margin-bottom: 1.4rem;
 }
 
 .your-answer {
@@ -60,10 +61,20 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    background-color: #FF9292;
+    box-shadow: 2px 2px #252A34;
+    width: 12rem;
+    height: 3.2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    transition: all 0.5s;
+}
+
+#button:hover {
+    background-color: #f8a6aa;
 }
 
 /* align icon to the right */
 i.fas.fa-angle-double-right {
     float: right;
-    padding-left: 0.2rem;
 }
