@@ -108,7 +108,7 @@ label:hover {
     cursor: pointer;
 }
 
-/* align icon to the right */
+/* align button icon to the right */
 i.fas.fa-angle-double-right {
     float: right;
 }
