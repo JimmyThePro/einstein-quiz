@@ -2,6 +2,8 @@
 
 body {
     background: url(../images/background.png) no-repeat;
+    width: 100%;
+    height: auto;
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #252A34;
@@ -68,6 +70,7 @@ input[type=radio] {
     display: none;
 }
 
+/* learned code from https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead */
 input[type="radio"]:checked+label {
     background: #FF9292;
 }
