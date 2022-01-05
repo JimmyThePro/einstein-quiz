@@ -1,6 +1,7 @@
 /* global body style */
 
 body {
+    background: url(../images/background.png) no-repeat;
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #252A34;
