@@ -24,14 +24,32 @@
         <img class="logo" src="assets/images/einstein_logo.png" alt="Einstein logo">Einstein Quiz!</h1>
 
     <div class="quiz-area">
-        <div class="question">Question here</div>
+        <h2 class="question">Question here</h2>
 
-        <div class="your-answer">4 different alternatives (radio buttons)</div>
+        <div class="your-answer">
+            <ul>
+                <li>
+                    <label for="alt1" id="alt1-text">1</label>
+                    <input type="radio" id="alt1" class="option" name="option">
+                </li>
+                <li>
+                    <label for="alt2" id="alt2-text">2</label>
+                    <input type="radio" id="alt2" class="option" name="option">
+                </li>
+                <li>
+                    <label for="alt3" id="alt3-text">3</label>
+                    <input type="radio" id="alt3" class="option" name="option">
+                </li>
+                <li>
+                    <label for="alt4" id="alt4-text">4</label>
+                    <input type="radio" id="alt4" class="option" name="option">
+                </li>
+            </ul>
+        </div>
 
         <div class="button-area">
-            <button type="submit" id="button">
-                <i class="fas fa-angle-double-right"></i>Submit
-            </button>
+            <button type="submit" id="button" aria-label="Click button to SUBMIT your answer">
+                <i class="fas fa-angle-double-right"></i>Submit</button>
         </div>
     </div>
 
