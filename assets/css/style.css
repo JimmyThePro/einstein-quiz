@@ -53,8 +53,37 @@ h1 {
 }
 
 .your-answer {
+    width: 80%;
     font-size: 1.2rem;
+    display: inline-block;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background: #FF9292;
+}
+
+label {
+    background-color: #ff92924d;
+    padding: 2px 12px 4px 12px;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+label:hover {
+    background: #ff92929d;
+  }
 
 #button {
     font-family: 'Bubblegum Sans', sans-serif;
@@ -72,6 +101,7 @@ h1 {
 
 #button:hover {
     background-color: #f8a6aa;
+    cursor: pointer;
 }
 
 /* align icon to the right */
