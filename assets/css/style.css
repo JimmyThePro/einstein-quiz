@@ -49,7 +49,7 @@ h1 {
     padding: 6% 2% 2% 2%;
 }
 
-.question {
+#question {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1.4rem;
