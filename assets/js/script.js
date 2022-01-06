@@ -94,7 +94,7 @@ let alt3Text = document.getElementById("alt3text");
 let alt4Text = document.getElementById("alt4text");
 
 let button = document.getElementById("button");
-let quizArea = document.getElementsByClassName("quiz-area");
+let quizArea = document.getElementById("quiz-area");
 
 // set question number to 0
 let questionNumber = 0;
@@ -115,18 +115,20 @@ function startQuiz() {
 
 startQuiz();
 
+/**
+ * This function loads when user click "submit" button, next question appears
+ */
 function nextQuestion() {
-    if (questionNumber < allQuestions.length) {
+    if (questionNumber < allQuestions.length-1) {
         questionNumber++;
         startQuiz();
     } else {
+        // learned reload button here: https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
         quizArea.innerHTML = `
         <h2>You scored: </h2>
-
-        <button onclick="location.reload()">Reload Quiz!</button>
+        <button onClick="window.location.reload()">Reload Quiz!</button>
         `
     }
-
 }
 
 button.addEventListener("click", nextQuestion);
