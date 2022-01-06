@@ -100,7 +100,7 @@ let quizArea = document.getElementById("quiz-area");
 let questionNumber = 0;
 
 /**
- * Starting quiz and show questions/option-answers when user open page in a browser
+ * This function show questions/option-answers when user open page in a browser
  */
 function startQuiz() {
 
@@ -113,6 +113,7 @@ function startQuiz() {
     alt4Text.innerHTML = questionList.alt4;
 }
 
+// start quiz
 startQuiz();
 
 /**
@@ -130,12 +131,17 @@ function uncheckRadio() {
  * This function loads when user click "submit" button, next question appears
  */
 function nextQuestion() {
-    if (questionNumber < allQuestions.length-1) {
+    // learned "checked radiobutton" code here: https://tinyurl.com/59ddenvd
+    if (document.querySelectorAll('input[type="radio"]:checked').length === 0) {
+        alert("You need to select an option...");
+
+    } else if (questionNumber < allQuestions.length-1) {
         questionNumber++;
         uncheckRadio();
         startQuiz();
+
     } else {
-        // learned reload button here: https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
+        // learned reload button here: https://tinyurl.com/39e3f3pn
         quizArea.innerHTML = `
         <h2>You scored: </h2>
         <button onClick="window.location.reload()">Reload Quiz!</button>
@@ -143,4 +149,6 @@ function nextQuestion() {
     }
 }
 
+// click event to next question
 button.addEventListener("click", nextQuestion);
+

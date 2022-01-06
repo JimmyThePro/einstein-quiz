@@ -70,7 +70,7 @@ input[type=radio] {
     display: none;
 }
 
-/* learned code from https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead */
+/* learned code from: https://tinyurl.com/3wxvw7ab */
 input[type="radio"]:checked+label {
     background: #FF9292;
 }
