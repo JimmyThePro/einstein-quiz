@@ -1,4 +1,5 @@
-// question array
+// store questions in an array
+
 let allQuestions = [
     {
         question: "When was Albert Einstein born?",
@@ -9,7 +10,7 @@ let allQuestions = [
         rightAnswer: "alt3",
     },
     {
-        question: "Where was he born",
+        question: "Where was he born?",
         alt1: "England",
         alt2: "France",
         alt3: "Germany",
@@ -83,6 +84,7 @@ let allQuestions = [
 ];
 
 // call elements by id/class
+
 let question = document.getElementById("question");
 let option = document.getElementsByClassName("option");
 
@@ -92,10 +94,14 @@ let alt3Text = document.getElementById("alt3text");
 let alt4Text = document.getElementById("alt4text");
 
 let button = document.getElementById("button");
+let quizArea = document.getElementsByClassName("quiz-area");
 
+// set question number to 0
 let questionNumber = 0;
 
-// function to start quiz and show questions
+/**
+ * Starting quiz and show questions/option-answers when user open page in a browser
+ */
 function startQuiz() {
 
     let questionList = allQuestions[questionNumber];
@@ -109,3 +115,18 @@ function startQuiz() {
 
 startQuiz();
 
+function nextQuestion() {
+    if (questionNumber < allQuestions.length) {
+        questionNumber++;
+        startQuiz();
+    } else {
+        quizArea.innerHTML = `
+        <h2>You scored: </h2>
+
+        <button onclick="location.reload()">Reload Quiz!</button>
+        `
+    }
+
+}
+
+button.addEventListener("click", nextQuestion);

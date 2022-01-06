@@ -2,8 +2,6 @@
 
 body {
     background: url(../images/background.png) no-repeat;
-    width: 100%;
-    height: auto;
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #252A34;
@@ -34,7 +32,7 @@ h1 {
     margin-top: -1.5rem;
 }
 
-/* quiz-area */
+/* quiz area */
 
 .quiz-area {
     background-color: #ffffff;
@@ -66,6 +64,8 @@ ul {
     padding: 0;
 }
 
+/* radio buttons style */
+
 input[type=radio] {
     display: none;
 }
@@ -89,12 +89,14 @@ label:hover {
     background: #ff92929d;
   }
 
+/* submit button */
+
 #button {
     font-family: 'Bubblegum Sans', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    background-color: #FF9292;
+    background-color: #f8a6aa;
     box-shadow: 2px 2px #252A34;
     width: 12rem;
     height: 3.2rem;
@@ -104,7 +106,7 @@ label:hover {
 }
 
 #button:hover {
-    background-color: #f8a6aa;
+    background-color: #FF9292;
     cursor: pointer;
 }
 
