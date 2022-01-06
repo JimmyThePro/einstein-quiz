@@ -116,11 +116,23 @@ function startQuiz() {
 startQuiz();
 
 /**
+ * This function unchecks radiobuttons, when next question appears
+ */
+function uncheckRadio() {
+    // learned code here: https://tinyurl.com/yc5a78th
+    for (i = 0; i < option.length; i++)
+    {
+        option[i].checked = false;
+    }
+}
+
+/**
  * This function loads when user click "submit" button, next question appears
  */
 function nextQuestion() {
     if (questionNumber < allQuestions.length-1) {
         questionNumber++;
+        uncheckRadio();
         startQuiz();
     } else {
         // learned reload button here: https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
