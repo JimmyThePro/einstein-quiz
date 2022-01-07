@@ -173,5 +173,9 @@ i.fas.fa-angle-double-right {
         font-size: 1.5rem;
     }
 
+    #quiz-area {
+        height: auto;
+    }
+
 }
 

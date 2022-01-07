@@ -154,3 +154,5 @@ function nextQuestion() {
 
 // click event to next question
 button.addEventListener("click", nextQuestion)
+
+
