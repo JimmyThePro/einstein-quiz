@@ -1,3 +1,5 @@
+
+
 /* global body style */
 
 body {
@@ -144,9 +146,17 @@ i.fas.fa-angle-double-right {
     .logo {
         float: none;
     }
+
+    #question {
+        font-size: 1.2rem;
+    }
+
+    .your-answer {
+        font-size: 1rem;
+    }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 430px) {
     #quiz-area {
         width: 80%;
     }
@@ -170,6 +180,12 @@ i.fas.fa-angle-double-right {
 @media (max-width: 310px) {
     #button {
         width: 9rem;
+        font-size: 1.5rem;
+    }
+
+    #reloadButton {
+        width: 9rem;
+        height: auto;
         font-size: 1.5rem;
     }
 

@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // store questions in an array
 
 let allQuestions = [
@@ -7,7 +9,7 @@ let allQuestions = [
         alt2: "13 February 1849",
         alt3: "14 March 1879",
         alt4: "15 April 1909",
-        rightAnswer: "14 March 1879",
+        rightAnswer: "alt3",
     },
     {
         question: "Where was he born?",
