@@ -91,7 +91,7 @@ label:hover {
     background: #ff92929d;
   }
 
-/* submit button */
+/* buttons */
 
 #button {
     font-family: 'Bubblegum Sans', sans-serif;
@@ -108,6 +108,24 @@ label:hover {
 }
 
 #button:hover {
+    background-color: #FF9292;
+    cursor: pointer;
+}
+
+#reloadButton {
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #f8a6aa;
+    box-shadow: 2px 2px #252A34;
+    height: 3.2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    transition: all 0.5s;
+}
+
+#reloadButton:hover {
     background-color: #FF9292;
     cursor: pointer;
 }

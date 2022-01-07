@@ -139,7 +139,6 @@ function nextQuestion() {
         alert("You need to select an option...");
 
     } else if (questionNumber < allQuestions.length-1) {
-        incrementScore();
         questionNumber++;
         uncheckRadio();
         startQuiz();
@@ -148,18 +147,10 @@ function nextQuestion() {
         // learned reload button here: https://tinyurl.com/39e3f3pn
         quizArea.innerHTML = `
         <h2>You scored: ${quizScore}/${allQuestions.length}</h2>
-        <button onClick="window.location.reload()">Reload Quiz!</button>
+        <button id="reloadButton" onClick="window.location.reload()">Reload Quiz!</button>
         `
     }
 }
 
 // click event to next question
 button.addEventListener("click", nextQuestion)
-
-function incrementScore() {
-
-    if (option = allQuestions[questionNumber].rightAnswer) {
-        ++quizScore;
-    }
-
-}
