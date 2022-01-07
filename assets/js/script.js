@@ -99,6 +99,9 @@ let quizArea = document.getElementById("quiz-area");
 // set question number to 0
 let questionNumber = 0;
 
+// set score to 0
+let quizScore = 0;
+
 /**
  * This function show questions/option-answers when user open page in a browser
  */
@@ -136,6 +139,7 @@ function nextQuestion() {
         alert("You need to select an option...");
 
     } else if (questionNumber < allQuestions.length-1) {
+        incrementScore();
         questionNumber++;
         uncheckRadio();
         startQuiz();
@@ -143,12 +147,19 @@ function nextQuestion() {
     } else {
         // learned reload button here: https://tinyurl.com/39e3f3pn
         quizArea.innerHTML = `
-        <h2>You scored: </h2>
+        <h2>You scored: ${quizScore}/${allQuestions.length}</h2>
         <button onClick="window.location.reload()">Reload Quiz!</button>
         `
     }
 }
 
 // click event to next question
-button.addEventListener("click", nextQuestion);
+button.addEventListener("click", nextQuestion)
 
+function incrementScore() {
+
+    if (option = allQuestions[questionNumber].rightAnswer) {
+        ++quizScore;
+    }
+
+}

@@ -119,3 +119,41 @@ i.fas.fa-angle-double-right {
 
 /* media queries */
 
+@media (max-width: 630px) {
+    #quiz-area {
+        width: 70%;
+    }
+    .logo {
+        float: none;
+    }
+}
+
+@media (max-width: 410px) {
+    #quiz-area {
+        width: 80%;
+    }
+    #question {
+        font-size: 1.2rem;
+    }
+
+    .your-answer {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 310px) {
+    #button {
+        width: 9rem;
+        font-size: 1.5rem;
+    }
+
+}
+
