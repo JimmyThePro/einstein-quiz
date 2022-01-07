@@ -7,7 +7,7 @@ let allQuestions = [
         alt2: "13 February 1849",
         alt3: "14 March 1879",
         alt4: "15 April 1909",
-        rightAnswer: "alt3",
+        rightAnswer: "14 March 1879",
     },
     {
         question: "Where was he born?",
@@ -139,6 +139,7 @@ function nextQuestion() {
         alert("You need to select an option...");
 
     } else if (questionNumber < allQuestions.length-1) {
+        score();
         questionNumber++;
         uncheckRadio();
         startQuiz();
@@ -148,11 +149,18 @@ function nextQuestion() {
         quizArea.innerHTML = `
         <h2>You scored: ${quizScore}/${allQuestions.length}</h2>
         <button id="reloadButton" onClick="window.location.reload()">Reload Quiz!</button>
-        `
+        `;
     }
 }
 
 // click event to next question
-button.addEventListener("click", nextQuestion)
+button.addEventListener("click", nextQuestion);
 
-
+// score not working
+function score() {
+    let youSelect = document.querySelector('input[type="radio"]:checked');
+    let answer = youSelect.value;
+    if (allQuestions[questionNumber].rightAnswer === answer) {
+        quizScore++;
+    }
+}
