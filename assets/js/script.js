@@ -9,7 +9,7 @@ let allQuestions = [
         alt2: "13 February 1849",
         alt3: "14 March 1879",
         alt4: "15 April 1909",
-        rightAnswer: "alt3",
+        rightAnswer: "14 March 1879",
     },
     {
         question: "Where was he born?",
@@ -17,7 +17,7 @@ let allQuestions = [
         alt2: "France",
         alt3: "Germany",
         alt4: "Switzerland",
-        rightAnswer: "alt3",
+        rightAnswer: "Germany",
     },
     {
         question: "Which hobbies did he have?",
@@ -25,7 +25,7 @@ let allQuestions = [
         alt2: "Cooking and Running",
         alt3: "Gardening and Architecture",
         alt4: "Singing and Swimming",
-        rightAnswer: "alt1",
+        rightAnswer: "Piano and Sailing",
     },
     {
         question: "How much IQ did he have?",
@@ -33,7 +33,7 @@ let allQuestions = [
         alt2: "181 - 200",
         alt3: "201 - 220",
         alt4: "221 - 240",
-        rightAnswer: "alt1",
+        rightAnswer: "160 - 180",
     },
     {
         question: "Did he have any sisters and brothers?",
@@ -41,7 +41,7 @@ let allQuestions = [
         alt2: "One brother named Claus",
         alt3: "One sister named Maja",
         alt4: "Two sisters named Sarah and Claire",
-        rightAnswer: "alt3",
+        rightAnswer: "One sister named Maja",
     },
     {
         question: "When was he awarded the Nobel Prize in Physics?",
@@ -49,7 +49,7 @@ let allQuestions = [
         alt2: "1902",
         alt3: "1912",
         alt4: "1922",
-        rightAnswer: "alt4",
+        rightAnswer: "1922",
     },
     {
         question: "For what did he win Nobel Prize in Physics?",
@@ -57,7 +57,7 @@ let allQuestions = [
         alt2: "Discovery of proton",
         alt3: "Explanation of photoelectric effect",
         alt4: "Discovery of electron",
-        rightAnswer: "alt3",
+        rightAnswer: "Explanation of photoelectric effect",
     },
     {
         question: "How tall was he?",
@@ -65,7 +65,7 @@ let allQuestions = [
         alt2: "170 cm",
         alt3: "175 cm",
         alt4: "180 cm",
-        rightAnswer: "alt2",
+        rightAnswer: "170 cm",
     },
     {
         question: "How much was his weight?",
@@ -73,7 +73,7 @@ let allQuestions = [
         alt2: "60 kg",
         alt3: "65 kg",
         alt4: "70 kg",
-        rightAnswer: "alt4",
+        rightAnswer: "70 kg",
     },
     {
         question: "When did he die?",
@@ -81,7 +81,7 @@ let allQuestions = [
         alt2: "16 February 1895",
         alt3: "17 March 1925",
         alt4: "18 April 1955",
-        rightAnswer: "alt4",
+        rightAnswer: "18 April 1955",
     },
 ];
 
@@ -89,6 +89,12 @@ let allQuestions = [
 
 let question = document.getElementById("question");
 let option = document.getElementsByClassName("option");
+
+// radio button setup
+let alt1 = document.getElementById("alt1");
+let alt2 = document.getElementById("alt2");
+let alt3 = document.getElementById("alt3");
+let alt4 = document.getElementById("alt4");
 
 let alt1Text = document.getElementById("alt1text");
 let alt2Text = document.getElementById("alt2text");
@@ -107,19 +113,24 @@ let quizScore = 0;
 /**
  * This function show questions/option-answers when user open page in a browser
  */
-function startQuiz() {
-
+function populateQuestion() {
     let questionList = allQuestions[questionNumber];
-
     question.innerHTML = questionList.question;
+    
+    alt1.value = questionList.alt1;
     alt1Text.innerHTML = questionList.alt1;
+
+    alt2.value = questionList.alt2;
     alt2Text.innerHTML = questionList.alt2;
+
+    alt3.value = questionList.alt3;
     alt3Text.innerHTML = questionList.alt3;
+
+    alt4.value = questionList.alt4;
     alt4Text.innerHTML = questionList.alt4;
 }
 
-// start quiz
-startQuiz();
+populateQuestion();
 
 /**
  * This function unchecks radiobuttons, when next question appears
@@ -144,7 +155,7 @@ function nextQuestion() {
         score();
         questionNumber++;
         uncheckRadio();
-        startQuiz();
+        populateQuestion();
 
     } else {
         // learned reload button here: https://tinyurl.com/39e3f3pn
@@ -158,7 +169,9 @@ function nextQuestion() {
 // click event to next question
 button.addEventListener("click", nextQuestion);
 
-// score not working
+/**
+ * This function calculates score, one right 'question answer' give user +1 score
+ */
 function score() {
     let youSelect = document.querySelector('input[type="radio"]:checked');
     let answer = youSelect.value;
