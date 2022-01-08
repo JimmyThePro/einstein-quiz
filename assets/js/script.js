@@ -116,7 +116,7 @@ let quizScore = 0;
 function populateQuestion() {
     let questionList = allQuestions[questionNumber];
     question.innerHTML = questionList.question;
-    
+
     alt1.value = questionList.alt1;
     alt1Text.innerHTML = questionList.alt1;
 
@@ -159,6 +159,7 @@ function nextQuestion() {
 
     } else {
         // learned reload button here: https://tinyurl.com/39e3f3pn
+        score();
         quizArea.innerHTML = `
         <h2>You scored: ${quizScore}/${allQuestions.length}</h2>
         <button id="reloadButton" aria-label="Click button to RELOAD quiz" onClick="window.location.reload()">Reload Quiz!</button>

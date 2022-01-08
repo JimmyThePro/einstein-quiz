@@ -69,8 +69,9 @@ I bet the user will play until he/she scores 10/10.
 
     - HTML - No errors when checked with "W3C validator". https://validator.w3.org/
     - CSS - No errors when checked with "Jigsaw validator". https://jigsaw.w3.org/css-validator/
+    - Javascript - No warnings detected, when testing the code at: https://jshint.com/
     - This site is responsive. Different browsers work with this site (firefox, chrome, safari, edge). All links and buttons work.
-    - Lighthouse site tested, with good score.
+    - 'Lighthouse' with site tested, with good score.
 <br/><br/>
 
 ![lighthouse score](assets/images/lighthouse.png)
