@@ -1,108 +1,126 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Einstein Quiz**
+"Einstein Quiz" is a site with Albert Einstein questions. This fun quiz site is for people that want to try their knowledge of Albert Einsten's life, and of course for quiz addicted people.
+This site have 10 questions of Einstein... can't wait? ...go try this quiz now: https://jimmythepro.github.io/einstein-quiz/
 
-Welcome JimmyThePro,
+![quiz will work in any media browser]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+* **Main quiz page**
 
-## Gitpod Reminders
+    - This fully responsive page will allow all users to easy start the quiz, without hassle.
+    - First question is shown to the user, when site opens in a browser.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![main page image]()
 
-`python3 -m http.server`
+* **Logo with heading text**
 
-A blue button should appear to click: _Make Public_,
+    - The logo is a cartoon image of Albert Einstein (funny caricature).
+    - And right next to the logo, there is a heading with the text: "Einstein Quiz!", the user can see directly that this is a Einstein quiz.
 
-Another blue button should appear to click: _Open Browser_.
+![logo and heading text]()
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* **Score page**
 
-A blue button should appear to click: _Make Public_,
+    - This section shows the score the user got when answered all 10 questions.
+    - And underneith the score, there is a "reload quiz" button. Perfect if the user want to try this quiz again.
 
-Another blue button should appear to click: _Open Browser_.
+![score page]()
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## UX
 
-To log into the Heroku toolbelt CLI:
+An Albert Einstein or a quiz enthusiast will find this site as a perfect match!
+I bet the user will play until he/she scores 10/10.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* **User stories**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    - NEW USER: I am interested in Albert Einstein or just a quiz addict and want a perfect score of 10!
+    - RETURNING USER: User can show their family/friends this quiz, and try to beat them - who will get the highest score?!
 
-------
+* **Site goal**
 
-## Release History
+    - The goal of the site is to have fun in the Albert Einstein/quiz niche. Test the knowledge of Einstein's life.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* **Business owner**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - I want to entertain my users, and provide them with many laughs!
+    - This site will add alot of positive vibes to the users.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* **Wireframes**
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    - I used this picture to get an "idea" of how I wanted this site to look like. I did the design better I think, a clean design.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![wireframe image]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* **Validator testing**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    - HTML - No errors when checked with "W3C validator". https://validator.w3.org/
+    - CSS - No errors when checked with "Jigsaw validator". https://jigsaw.w3.org/css-validator/
+    - This site is responsive. Different browsers work with this site (firefox, chrome, safari, edge). All links and buttons work.
+    - Lighthouse site tested, with good score.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![lighthouse score]()
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Bugs
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - No bugs detected.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Unfixed bugs
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    - No unfixed bugs.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Technologies
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* **Languages used**
 
-------
+    - HTML
+    - CSS
+    - Javascript
 
-## FAQ about the uptime script
+## Programs
 
-**Why have you added this script?**
+    - Gitpod, used for code writing.
+    - Githud, store data.
+    - Git, version control.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Deployment
 
-**How will this affect me?**
+* **Was deployed to Github pages. The steps are:**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    - Github repository --> settings tab --> source section drop-down menu --> main
+    - When selected "main", page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+    - The site link: https://jimmythepro.github.io/einstein-quiz//index.html
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Credits
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Worked with my brother Daniel Junttila to solve a few functions for us.
+Also got help and tips from my mentor Adegbenga Adeye.
+To complete this 'Einstein Quiz' I used Code Institute student template: https://tinyurl.com/2p8mh8y9
 
-**So….?**
+* **Content**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    - Question examples picked from https://tinyurl.com/4wparj3a / https://tinyurl.com/3c7c3nn4 / https://tinyurl.com/ecxc7tsf
+    - Fonts (Bubblegum Sans, Open Sans) imported from https://fonts.google.com/
+    - Learned reload button here: https://tinyurl.com/39e3f3pn
+    - Learned "checked radiobutton" code here: https://tinyurl.com/59ddenvd
+    - Got information to uncheck radio buttons here: https://tinyurl.com/yc5a78th
+    - Color palette picked from https://colorhunt.co/
+    - Used Tinyurl to shorten the links - https://tinyurl.com/app/
 
-**Can I opt out?**
+* **Media**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    - All the images taken from https://www.pexels.com/ and https://www.freepik.com/
+    - The icons is taken from https://fontawesome.com/
+    - Used GIMP/paint for scaling the images, and GIMP for favicon image - https://www.gimp.org/
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* **Colors and fonts**
 
-**Anything more?**
+    - Background color: #ffffff
+    - Body font color: #252A34
+    - Heading font color: #676FA3
+    - Button color: #f8a6aa
+    - Fonts used: 'Bubblegum Sans' and 'Open Sans'.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+[Back to Top](#**Einstein-Quiz**)
