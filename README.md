@@ -10,6 +10,7 @@ This site have 10 questions of Einstein... can't wait? ...go try this quiz now: 
 
     - This fully responsive page will allow all users to easy start the quiz, without hassle.
     - First question is shown to the user, when site opens in a browser.
+    - User get 4 options to choose from, and then press submit button to get next question.
 
 ![main page image]()
 
