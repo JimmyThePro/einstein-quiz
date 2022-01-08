@@ -150,7 +150,7 @@ function nextQuestion() {
         // learned reload button here: https://tinyurl.com/39e3f3pn
         quizArea.innerHTML = `
         <h2>You scored: ${quizScore}/${allQuestions.length}</h2>
-        <button id="reloadButton" onClick="window.location.reload()">Reload Quiz!</button>
+        <button id="reloadButton" aria-label="Click button to RELOAD quiz" onClick="window.location.reload()">Reload Quiz!</button>
         `;
     }
 }
