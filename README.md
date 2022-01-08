@@ -140,4 +140,4 @@ To complete this 'Einstein Quiz' I used Code Institute student template: https:/
     - Fonts used: 'Bubblegum Sans' and 'Open Sans'.
 <br/><br/>
 
-[Back to Top](#**Einstein-Quiz**)
+[Back to Top](#Einstein-Quiz)
