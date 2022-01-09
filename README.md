@@ -1,6 +1,6 @@
 # **Einstein Quiz**
 "Einstein Quiz" is a site with Albert Einstein questions. This fun quiz site is for people that want to try their knowledge of Albert Einsten's life, and of course for quiz addicted people.
-This site have 10 questions of Einstein... can't wait? ...go try this quiz now: https://jimmythepro.github.io/einstein-quiz/
+This site have 10 questions, with four answer options each, and one of them is the correct answer.... can't wait? ...go try this quiz now: https://jimmythepro.github.io/einstein-quiz/
 <br/><br/>
 
 ![quiz will work in any media browser](assets/images/responsive.png)
@@ -12,6 +12,8 @@ This site have 10 questions of Einstein... can't wait? ...go try this quiz now: 
     - This fully responsive page will allow all users to easy start the quiz, without hassle.
     - First question is shown to the user, when site opens in a browser.
     - User get 4 options to choose from, and then press submit button to get next question.
+    - When clicking on one of the 4 "options", the option is turned to another color so it's easy to see what he/she selected.
+    - When next question appears, all radio buttons is unselected, so user can easy click on his/her choise.
 <br/><br/>
 
 ![main page image](assets/images/main_page.png)
@@ -32,6 +34,14 @@ This site have 10 questions of Einstein... can't wait? ...go try this quiz now: 
 <br/><br/>
 
 ![score page](assets/images/score_page.png)
+
+* **Select your answer**
+
+    - When user click "submit button and still not clicked on an answer, there is an alert message: You need to select an option...
+    - User click "OK" and alert message is gone, and user can choose his/her answer.
+<br/><br/>
+
+![score page](assets/images/alert_message.png)
 
 ## UX
 
@@ -104,7 +114,7 @@ I bet the user will play until he/she scores 10/10.
 
     - Github repository --> settings tab --> source section drop-down menu --> main
     - When selected "main", page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-    - The site link: https://jimmythepro.github.io/einstein-quiz//index.html
+    - The site link: https://jimmythepro.github.io/einstein-quiz/
 
 ## Credits
 
